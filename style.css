@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    font-size: 3.5rem;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border-radius: 1.2rem;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    margin-top: 180px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+aside img {
+    height: 500px;
+    width: 350px;
+    border-end-start-radius: var(--default-border-radius);
+    border-start-start-radius: var(--default-border-radius);
+}
+
+main {
+    height: 500px;
+    width: 350px;
+    padding: 4rem 4.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-end-end-radius: var(--default-border-radius);
+    border-start-end-radius: var(--default-border-radius);
+}
+
+main h1 {
+    margin: 20px 0px;
+    color: hsl(212, 21%, 14%);
+    justify-content: flex-start;
+    line-height: 35px;
+}
+
+main .description p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color:hsl(228, 12%, 48%);
+    line-height: 23px;
+}
+
+main .description .perfume {
+    letter-spacing: 3px;
+}
+
+main .price {
+    display: flex;
+    margin-top: 30px;
+}
+main .price-desc {
+    display: flex;
+    color: hsl(158, 36%, 37%);
+}
+
+main .price-full {
+    display: flex;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%);
+    align-items: center;
+    margin-left: 20px;
+}
+
+main .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main button {
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 50px;
+    border-radius: var(--default-border-radius);
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(228, 12%, 48%);
+}
